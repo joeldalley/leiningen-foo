@@ -5,5 +5,5 @@
   "Prints the first 50 characters of the HTML source of yelp.com."
   [& args]
   (println (apply str
-                  (take 50
-                        (:body (client/get "http://www.yelp.com"))))))
+    (take 50
+      (:body (client/get "http://www.yelp.com"))))))
